@@ -31,7 +31,7 @@ local CircleInline = Drawing.new("Circle")
 local CircleOutline = Drawing.new("Circle")
 RunService.Stepped:Connect(function()
     CircleInline.Radius = getgenv().Settings.Fov
-    CircleInline.Thickness = 2
+    CircleInline.Thickness = 0.5
     CircleInline.Position = Vector2.new(Mouse.X, Mouse.Y + 36)
     CircleInline.Transparency = 0.5
     CircleInline.Color = Color3.fromRGB(255, 255, 255)
